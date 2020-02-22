@@ -1,0 +1,14 @@
+1.启动zookeeper
+D:\software\zookeeper\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\bin
+双击zkServer.cmd文件
+
+2.D:\software\zookeeper\ZooInspector\build
+双击运行zookeeper-dev-ZooInspector.jar，连接到zookeeper，默认注册中心地址是：127.0.0.1:2181
+
+
+新建member客户端：
+1.File ->New Project ->Spring Initializr ->
+    Web -> Spring Web
+    Spring Cloud Discovery -> Apache Zookeeper Discovery
+2.application.yml
+3.启动类添加@EnableDiscoveryClient注解，开启eurekaClient
